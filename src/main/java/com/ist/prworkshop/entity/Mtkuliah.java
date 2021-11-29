@@ -13,7 +13,8 @@ public class Mtkuliah {
 
     @Id
     private Integer id_mtkuliah;
-    private String nama;
+    @Column(name = "nama")
+    private String namaMatkul;
 
     @ManyToOne()
     @JoinColumn(name = "id_dosen")

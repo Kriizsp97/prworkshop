@@ -13,7 +13,8 @@ public class Dosen {
 
     @Id
     private Integer id_dosen;
-    private String nama;
+    @Column(name = "nama")
+    private String namaDosen;
 
     @OneToMany(mappedBy = "dosen")
     @JsonBackReference
