@@ -12,12 +12,13 @@ import java.util.List;
 public class Mtkuliah {
 
     @Id
-    private Integer id_mtkuliah;
+    @Column(name = "id_mtkuliah")
+    private Integer idMtkuliah;
     @Column(name = "nama")
     private String namaMatkul;
 
     @ManyToOne()
-    @JoinColumn(name = "id_dosen")
+    @JoinColumn(name = "idDosen")
     private Dosen dosen;
 
 }

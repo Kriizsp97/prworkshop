@@ -12,7 +12,8 @@ import java.util.List;
 public class Dosen {
 
     @Id
-    private Integer id_dosen;
+    @Column(name = "id_dosen")
+    private Integer idDosen;
     @Column(name = "nama")
     private String namaDosen;
 

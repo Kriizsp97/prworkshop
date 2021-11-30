@@ -10,11 +10,12 @@ import javax.persistence.*;
 public class Mahasiswa {
 
     @Id
-    private Integer id_mhs;
+    @Column(name = "id_mhs")
+    private Integer idMhs;
     private String nama;
     private Integer sem;
 
     @OneToOne
-    @JoinColumn(name = "id_mtkuliah")
+    @JoinColumn(name = "idMtkuliah")
     private Mtkuliah mtkuliah;
 }
